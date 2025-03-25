@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grapgh"
+    app:startDestination="@id/mainEntranceFragment">
+
+    <fragment
+        android:id="@+id/mainEntranceFragment"
+        android:name="com.example.todolist.MainEntranceFragment"
+        android:label="fragment_main_entrance"
+        tools:layout="@layout/fragment_main_entrance" >
+        <action
+            android:id="@+id/action_mainEntranceFragment_to_mainFragmento"
+            app:destination="@id/mainFragmento" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainPageFragment"
+        android:name="com.example.todolist.old.MainPageFragment"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" >
+        <action
+            android:id="@+id/action_mainPageFragment_to_bugunFragment"
+            app:destination="@id/bugunFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_onemliFragment"
+            app:destination="@id/onemliFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_planlananFragment"
+            app:destination="@id/planlananFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_digerFragment"
+            app:destination="@id/digerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bugunFragment"
+        android:name="com.example.todolist.old.BugunFragment"
+        android:label="fragment_bugun"
+        tools:layout="@layout/fragment_bugun" />
+    <fragment
+        android:id="@+id/onemliFragment"
+        android:name="com.example.todolist.old.OnemliFragment"
+        android:label="fragment_onemli"
+        tools:layout="@layout/fragment_onemli" />
+    <fragment
+        android:id="@+id/planlananFragment"
+        android:name="com.example.todolist.old.PlanlananFragment"
+        android:label="fragment_planlanan"
+        tools:layout="@layout/fragment_planlanan" />
+    <fragment
+        android:id="@+id/digerFragment"
+        android:name="com.example.todolist.old.DigerFragment"
+        android:label="fragment_diger"
+        tools:layout="@layout/fragment_diger" />
+    <fragment
+        android:id="@+id/mainFragmento"
+        android:name="com.example.todolist.MainFragmento"
+        android:label="fragment_main_fragmento"
+        tools:layout="@layout/fragment_main_fragmento" >
+        <action
+            android:id="@+id/action_mainFragmento_to_bosFragment"
+            app:destination="@id/bosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bosFragment"
+        android:name="com.example.todolist.BosFragment"
+        android:label="fragment_bos"
+        tools:layout="@layout/fragment_bos" >
+        <argument
+            android:name="bilgi"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_bosFragment_to_mainFragmento"
+            app:destination="@id/mainFragmento" />
+    </fragment>
+</navigation>

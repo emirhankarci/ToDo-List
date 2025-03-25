@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".old.MainPageFragment"
+    >
+
+    <Button
+        android:id="@+id/bugun_buton"
+        android:layout_width="371dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/main_button"
+        android:onClick="bugun_fon"
+        android:text="Bugün"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/onemli_buton"
+        android:layout_width="371dp"
+        android:layout_height="54dp"
+
+
+        android:layout_marginTop="50dp"
+        android:background="@drawable/main_button"
+        android:onClick="onemli_fon"
+        android:text="Önemli"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bugun_buton" />
+
+    <Button
+        android:id="@+id/planlanan_buton"
+        android:layout_width="371dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/main_button"
+        android:onClick="planlanan_fon"
+        android:text="Planlanan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onemli_buton" />
+
+    <Button
+        android:id="@+id/diger_buton"
+        android:layout_width="371dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/main_button"
+        android:onClick="diger_fon"
+        android:text="Diğer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planlanan_buton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
